@@ -56,6 +56,9 @@
 </template>
 
 <template id="layout" name="Main layout">&lt;!DOCTYPE html&gt;
+    <xpath expr="//head//link" position="after">
+        <link rel="shortcut icon" href="/web/static/src/img/favicon.ico" type="image/x-icon"/>
+    </xpath>
     <html t-att-lang="lang and lang.replace('_', '-')"
           t-att-data-website-id="website.id if editable and website else None"
           t-att-data-editable="'1' if editable else None"
